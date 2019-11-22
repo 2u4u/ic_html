@@ -1,0 +1,104 @@
+//= _head.html
+
+<body class="wrapper wrapper--justify-between wrapper--column">
+  <main class="main">
+    //= _header.html
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list wrapper wrapper--align-center">
+          <li class=""><a href="/category.html" class="breadcrumbs__link"><i class="fas fa-home"></i></a></li>
+          <li class="breadcrumbs__item"><a href="/category.html" class="breadcrumbs__link">Название подкатегории</a>
+          <li class="breadcrumbs__item"><a href="/category.html" class="breadcrumbs__link">Название категории</a></li>
+          </li>
+        </ul>
+        <h2 class="breadcrumbs__header">Войти</h2>
+      </div>
+    </div>
+    <div class="page">
+      <div class="container">
+        <div class="wrapper wrapper--justify-center">
+          <div class="column column--sixth">
+            <div class="wrapper">
+              <div class="column column--half">
+                <form noValidate onSubmit={onSubmit} class="form form--full">
+                  <h3 class="form__header">Введите данные для входа:</h3>
+                  <div class="input-group input-group--filled">
+                    <label htmlFor={name}>Email</label>
+                    <input type="text" name="name" value="test" />
+                    <small class="input-group__text input-group__text--muted">Будем присылать только важные
+                      сообщения</small>
+                    <small class="input-group__text input-group__text--danger">Текст</small>
+                  </div>
+                  <div class="input-group">
+                    <label htmlFor={name}>Пароль</label>
+                    <input type="text" name="name" />
+                    <small class="input-group__text input-group__text--muted">Только цифры, спецсимволы или
+                      латинские буквы</small>
+                    <small class="input-group__text input-group__text--danger">Текст</small>
+                  </div>
+                  <a href="/" class="form__link link">Забыли пароль?</a>
+                  <div class="form__footer">
+                    <button type="submit" class="btn btn--lg btn--main form__btn">Войти</button>
+                  </div>
+                </form>
+              </div>
+              <div class="column column--half">
+                <h3 class="form__header">Использовать социальные сети:</h3>
+                <div class="form__block wrapper wrapper--justify-between wrapper--wrap wrapper--align-center">
+                  <button class="btn btn--facebook form__btn form__btn--social">Facebook</button>
+                  <button class="btn btn--vkontakte form__btn form__btn--social">Vkontakte</button>
+                  <button class="btn btn--twitter form__btn form__btn--social">Twitter</button>
+                  <button class="btn btn--google form__btn form__btn--social">Google</button>
+                </div>
+                <p class="form__or">если еще не зарегистрированны</p>
+                <button type="submit" class="btn btn--lg btn--muted form__btn">Зарегистрироваться</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal wrapper wrapper--align-center wrapper--justify-center">
+      <div class="modal__background">
+      </div>
+      <div class="modal__content">
+        <div class="wrapper">
+          <div class="column column--half">
+
+            <form noValidate onSubmit={onSubmit}>
+              <div class="form-group">
+                <label htmlFor={name}>Заголовок</label>
+                <input type="text" name="name" />
+                <small class="form-text text-muted">Текст</small>
+                <small class="form-text text-danger">Текст</small>
+              </div>
+              <div class="form-group">
+                <label htmlFor={name}>Заголовок</label>
+                <input type="text" name="name" />
+                <small class="form-text text-muted">Текст</small>
+                <small class="form-text text-danger">Текст</small>
+              </div>
+              <div class="form-group">
+                <label htmlFor={name}>Заголовок</label>
+                <input type="text" name="name" />
+                <small class="form-text text-muted">Текст</small>
+                <small class="form-text text-danger">Текст</small>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <button type="submit" class="btn btn-dark">Submit</button>
+                <a href="/login"><small>Or log in</small></a>
+              </div>
+            </form>
+          </div>
+          <div class="column column--half">
+
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  </main>
+  //= _footer.html
+</body>
+
+</html>

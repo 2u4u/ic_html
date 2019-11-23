@@ -16,85 +16,91 @@
     </div>
     <div class="page page--grey">
       <div class="container">
-        <div class="wrapper wrapper--justify-between category-filter">
-          <div>
+        <div class="category-filter">
+          <div class="search">
             <input type="text" placeholder="Искать" class="input  input--main" />
           </div>
-          <div>
+          <div class="btn-filter"><i class="fas fa-filter"></i> Фильтр</div>
+          <div class="sort">
             <select name="" id="" class="input input--main">
               <option value="">По популярности</option>
             </select>
           </div>
         </div>
         <div class="wrapper">
-          <aside class="aside aside__filter filter">
-            <div class="filter__block">
-              <div class="filter__header wrapper wrapper--justify-between">
-                <p>Выбрать город</p>
-                <!-- <a href=""><i class="fas fa-minus"></i></a> -->
-                <a href=""><i class="fas fa-plus"></i></a>
-              </div>
-              <!-- <div>
-                <div class="filter__item">
-                  <input type="checkbox">
-                  <label for="">Все города</label>
-                </div>
-                <div class="filter__item">
-                  <input type="checkbox">
-                  <label for="">Москва</label>
-                </div>
-                <div class="filter__item">
-                  <input type="checkbox">
-                  <label for="">Санкт-Петербург</label>
-                </div>
-              </div> -->
+          <aside class="aside aside--sho  filter">
+            <div class="btn-close">
+              <div class="btn-close__inner"><span></span><span></span></div>
             </div>
-            <div class="filter__block">
-              <div class="filter__header wrapper wrapper--justify-between">
-                <p>Компания</p>
-                <a href=""><i class="fas fa-minus"></i></a>
-                <!-- <a href=""><i class="fas fa-plus"></i></a> -->
+            <div class="aside__filter">
+              <div class="filter__block">
+                <div class="filter__header wrapper wrapper--justify-between">
+                  <p>Выбрать город</p>
+                  <!-- <a href=""><i class="fas fa-minus"></i></a> -->
+                  <a href=""><i class="fas fa-plus"></i></a>
+                </div>
+                <!-- <div>
+                  <div class="filter__item">
+                    <input type="checkbox">
+                    <label for="">Все города</label>
+                  </div>
+                  <div class="filter__item">
+                    <input type="checkbox">
+                    <label for="">Москва</label>
+                  </div>
+                  <div class="filter__item">
+                    <input type="checkbox">
+                    <label for="">Санкт-Петербург</label>
+                  </div>
+                </div> -->
               </div>
-              <div class="filter__content">
-                <div class="filter__item checkbox">
-                  <input type="checkbox" id="companies" name="companies">
-                  <label for="companies">Вся компания</label>
+              <div class="filter__block">
+                <div class="filter__header wrapper wrapper--justify-between">
+                  <p>Компания</p>
+                  <a href=""><i class="fas fa-minus"></i></a>
+                  <!-- <a href=""><i class="fas fa-plus"></i></a> -->
                 </div>
-                <div class="filter__item checkbox">
-                  <input type="checkbox" id="dates" name="companies">
-                  <label for="dates">Сроки</label>
-                </div>
-                <div class="filter__item checkbox">
-                  <input type="checkbox" id="users" name="companies">
-                  <label for="users">Поведение сотрудников</label>
+                <div class="filter__content">
+                  <div class="filter__item checkbox">
+                    <input type="checkbox" id="companies" name="companies">
+                    <label for="companies">Вся компания</label>
+                  </div>
+                  <div class="filter__item checkbox">
+                    <input type="checkbox" id="dates" name="companies">
+                    <label for="dates">Сроки</label>
+                  </div>
+                  <div class="filter__item checkbox">
+                    <input type="checkbox" id="users" name="companies">
+                    <label for="users">Поведение сотрудников</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="filter__block">
-              <div class="filter__header wrapper wrapper--justify-between">
-                <p>Услуга</p>
-                <a href=""><i class="fas fa-minus"></i></a>
-                <!-- <a href=""><i class="fas fa-plus"></i></a> -->
-              </div>
-              <div class="filter__content">
-                <div class="filter__item checkbox">
-                  <input type="checkbox" id="companies" name="companies">
-                  <label for="companies">Вся компания</label>
+              <div class="filter__block">
+                <div class="filter__header wrapper wrapper--justify-between">
+                  <p>Услуга</p>
+                  <a href=""><i class="fas fa-minus"></i></a>
+                  <!-- <a href=""><i class="fas fa-plus"></i></a> -->
                 </div>
-                <div class="filter__item checkbox">
-                  <input type="checkbox" id="dates" name="companies">
-                  <label for="dates">Сроки</label>
-                </div>
-                <div class="filter__item checkbox">
-                  <input type="checkbox" id="users" name="companies">
-                  <label for="users">Поведение сотрудников</label>
+                <div class="filter__content">
+                  <div class="filter__item checkbox">
+                    <input type="checkbox" id="companies" name="companies">
+                    <label for="companies">Вся компания</label>
+                  </div>
+                  <div class="filter__item checkbox">
+                    <input type="checkbox" id="dates" name="companies">
+                    <label for="dates">Сроки</label>
+                  </div>
+                  <div class="filter__item checkbox">
+                    <input type="checkbox" id="users" name="companies">
+                    <label for="users">Поведение сотрудников</label>
+                  </div>
                 </div>
               </div>
             </div>
           </aside>
           <section>
 
-            <div class="wrapper wrapper--wrap column__wrapper column__wrapper--category">
+            <div class="post-list  post-list--category  column__wrapper">
               //= _postpreview_half.html
               //= _postpreview_half.html
               //= _postpreview_half.html
@@ -106,7 +112,7 @@
               //= _postpreview_half.html
               //= _postpreview_half.html
             </div>
-            <div class="wrapper wrapper--justify-end">
+            <div class="pagination-inner">
               <ul class="pagination wrapper">
                 <li class="pagination__item"><a href="/" class="pagination__link link">&lt;</a>
                 </li>

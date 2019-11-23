@@ -1,9 +1,17 @@
 <header class="header">
   <div class="container">
     <div class="wrapper wrapper--align-center wrapper--justify-between header__wrapper">
+      <button class="burger">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 12"
+          shapeRendering="geometricPrecision" class="components_CategoriesMenu__icon_0">
+          <rect x="0" y="0" width="16" height="2"></rect>
+          <rect x="0" y="5" width="16" height="2"></rect>
+          <rect x="0" y="10" width="16" height="2"></rect>
+        </svg>
+      </button>
       <a href="/" class="logo"></a>
-      <ul class="wrapper wrapper--align-center wrapper--justify-center">
-        <li><button class="btn btn--accent">Добавить жалобу</button></li>
+      <ul class="header-nav  wrapper wrapper--align-center wrapper--justify-center">
+        <li><button class="btn btn--accent"><span>+</span><span>Добавить жалобу</span></button></li>
         <li><a href="/" class="header__link link">О проекте</a></li>
         <li><a href="/" class="header__link link">Вход</a></li>
         <li><a href="/register.html" class="header__link link">Регистрация</a></li>
@@ -11,24 +19,37 @@
     </div>
   </div>
 </header>
-<nav class="nav nav--grey">
+<nav class="top-nav  nav nav--grey">
   <div class="container">
-    <ul class="wrapper wrapper--align-center wrapper--justify-between nav__wrapper">
-      <li><a href="/category.html" class="nav__link link">Мобильная операторы</a></li>
-      <li><a href="/category.html" class="nav__link link">Интернет провайдеры</a></li>
-      <li><a href="/category.html" class="nav__link link">Банковские услуги</a></li>
-      <li><a href="/category.html" class="nav__link link">Магазины</a></li>
-      <li><a href="/category.html" class="nav__link link">Кафе и рестораны</a></li>
-      <li><a href="/category.html" class="nav__link link">Такси</a></li>
-      <li><a href="/category.html" class="nav__link link">Авиакомпании</a></li>
-      <li><a href="/category.html" class="nav__link link wrapper">
-          <span class="nav__link-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 12"
-              shapeRendering="geometricPrecision" class="components_CategoriesMenu__icon_0">
-              <rect x="0" y="0" width="16" height="2"></rect>
-              <rect x="0" y="5" width="16" height="2"></rect>
-              <rect x="0" y="10" width="16" height="2"></rect>
-            </svg></span>Все категории
-        </a></li>
-    </ul>
+    <div class="top-nav__inner  op-nav__inner--show">
+      <div class="top-nav__close">
+        <div class="top-nav__close-inner"><span></span><span></span></div>
+      </div>
+      <div class="top-nav__wrap">
+        <ul class="top-nav__list  wrapper wrapper--align-center wrapper--justify-between nav__wrapper">
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Мобильная операторы</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Интернет провайдеры</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Банковские услуги</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Магазины</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Кафе и рестораны</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Такси</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link">Авиакомпании</a></li>
+          <li><a href="/category.html" class="top-nav__link  nav__link link wrapper">
+              <span class="nav__link-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 12"
+                  shapeRendering="geometricPrecision" class="components_CategoriesMenu__icon_0">
+                  <rect x="0" y="0" width="16" height="2"></rect>
+                  <rect x="0" y="5" width="16" height="2"></rect>
+                  <rect x="0" y="10" width="16" height="2"></rect>
+                </svg></span>Все категории
+            </a>
+          </li>
+        </ul>
+        <div class="top-nav__footer">
+          <a href="#" class="top-nav__link">Вход</a>
+          <a href="#" class="top-nav__link">О проекте</a>
+          <button class="btn btn--accent">Добавить жалобу</button>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>

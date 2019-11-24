@@ -146,7 +146,7 @@ a {
     width: 120px;
     transform: translateX(-50%);
 
-    @include xl {
+    @include lg {
       position: static;
       width: 200px;
       transform: none;
@@ -229,14 +229,14 @@ a {
     span {
       display: none;
 
-      @include xl {
+      @include lg {
         display: block;
       }
     }
 
     i {
 
-      @include xl {
+      @include lg {
         display: none;
       }
     }
@@ -250,7 +250,7 @@ a {
   position: relative;
   z-index: 1;
 
-  @include xl {
+  @include lg {
     box-shadow: 0 0px 3px 0 rgba(0,0,0,.15);
   }
 
@@ -265,7 +265,7 @@ a {
       width: 1em;
       margin-right: 0.5em;
 
-      @include xl {
+      @include lg {
         display: block;
       }
 
@@ -283,7 +283,12 @@ a {
 }
 
 .section {
-  padding: 3em 0;
+  padding: 1.5em 0;
+
+  @include lg {
+    padding: 3em 0;
+  }
+
   &--grey {
     background-color: var(--backgroundGrey);
   }
@@ -299,7 +304,7 @@ a {
     }
 
     h2 {
-      font-size: 2em;
+      font-size: 1.5em;
       line-height: 1.2;
       font-weight: 500;
       margin-right: 1em;
@@ -307,6 +312,7 @@ a {
 
       @include lg {
         margin-bottom: 0;
+        font-size: 2em;
       }
     }
     &-link {
@@ -345,16 +351,24 @@ a {
 .intro {
   &__header {
     color: #000000;
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: 600;
     margin: 1em 0 0.5em 0;
     // text-transform: uppercase;
+
+    @include lg {
+      font-size: 3em;
+    }
   }
   &__subheader {
     color: #313131;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 400;
     margin: 1em 0;
+
+    @include lg {
+      font-size: 1.6em;
+    }
   }
   &__list {
     color: var(--headerLink);
@@ -419,10 +433,14 @@ a {
   }
   &__header {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 0.5em;
     display: block;
-    color: inherit
+    color: inherit;
+
+    @include lg {
+      font-size: 1.5em;
+    }
   }
   &__category {
     height: 30px;
@@ -553,6 +571,7 @@ a {
 }
 
 .page {
+  margin-bottom: 30px;
   padding-top: 2em;
   // padding-bottom: 3em;
   &--grey {
@@ -583,8 +602,12 @@ a {
   }
   &__header {
     padding: 0.75em 0 0.35em;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
+
+    @include lg {
+      font-size: 2em;
+    }
   }
 }
 
@@ -649,6 +672,7 @@ a {
     width: 30%;
     flex-shrink: 0;
     padding: 0;
+    padding-top: 10px;
     padding-right: 10px;
     box-shadow: none;
   }
@@ -1024,7 +1048,7 @@ a {
   li {
     display: none;
 
-    @include xl {
+    @include lg {
       display: block;
     }
   }
@@ -1037,22 +1061,24 @@ a {
   .btn--accent {
     padding: 0 .3em;
 
-    @include xl {
+    @include lg {
       padding: .5em 1em;
     }
 
     span {
       display: block;
-      font-size: 1.7em;
+      font-size: 1.5em;
+      line-height: 1em;
+      padding: 5px;
 
-      @include xl {
+      @include lg {
         display: none;
       }
 
       + span {
         display: none;
 
-        @include xl {
+        @include lg {
           display: block;
           font-size: inherit;
         } 
@@ -1067,7 +1093,7 @@ a {
   .container {
     padding: 0;
 
-    @include xl {
+    @include lg {
       padding: 0 15px;
     }
   }
@@ -1087,7 +1113,7 @@ a {
   display: none;
   box-shadow: 4px 0 15px 0 #ccc;
 
-  @include xl {
+  @include lg {
     position: static;
     width: auto;
     padding: 0;
@@ -1104,7 +1130,7 @@ a {
   height: calc(100vh - 105px);
   overflow-y: auto;
 
-  @include xl {
+  @include lg {
     height: auto;
     overflow-y: initial;
   }
@@ -1113,15 +1139,31 @@ a {
 .top-nav__list {
   display: block;
 
-  @include xl {
+  @include lg {
     display: flex;
   }
 
   li {
     margin-bottom: 10px;
 
-    @include xl {
+    @include lg {
       margin-bottom: 0;
+
+      &:nth-last-child(2) {
+        display: none;
+      }
+      &:nth-last-child(3) {
+        display: none;
+      }
+    }
+    @include xl {
+
+      &:nth-last-child(2) {
+        display: block;
+      }
+      &:nth-last-child(3) {
+        display: block;
+      }
     }
   }
 }
@@ -1130,7 +1172,7 @@ a {
   display: block;
   padding: 5px;
 
-  @include xl {
+  @include lg {
     display: flex;
   }
 }
@@ -1141,7 +1183,7 @@ a {
   padding-top: 20px;
   border-top: 2px solid var(--headerLink);
 
-  @include xl {
+  @include lg {
     display: none;
   }
 
@@ -1160,7 +1202,7 @@ a {
   border-radius:5px;
   cursor: pointer;
 
-  @include xl {
+  @include lg {
     display: none;
   }
 
@@ -1214,7 +1256,7 @@ a {
   border: none;
   background: none;
 
-  @include xl {
+  @include lg {
     display: none;
   }
 
